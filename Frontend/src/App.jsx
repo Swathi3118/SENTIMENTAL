@@ -6,7 +6,7 @@ function App(){
     const[video,setVideo]=useState([]);
 
     const getVideo=async()=>{
-        const res=await axios.post("https://sentimental-z2eb.onrender.com/mood",
+        const res=await axios.post("https://sentimental-z2eb.onrender.com",
         {text:text});
         setVideo(res.data);
     };
